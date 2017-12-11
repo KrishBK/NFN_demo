@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="com.example.vishnuprabha.nfn_demo.MainActivity"
+    android:background="#00c3ea"
+
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+    android:weightSum="1"
+    android:layout_weight="1">
+
+    <android.support.v7.widget.AppCompatImageView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/doctor"
+    android:id="@+id/appCompatImageView"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/appCompatImageView"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:background="@color/whie"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/qs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hello World!"
+            android:textColor="#3b3a3a"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:id="@+id/linearLayout6"
+    android:layout_below="@+id/linearLayout"
+    android:layout_alignParentStart="true">
+    <ListView
+        android:id="@+id/sl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whie"
+        android:textAlignment="center"
+        android:layout_marginTop="11dp"
+        />
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"
+        android:id="@+id/scrollView2">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/r1"
+
+            android:text="Skip"
+            android:textColor="@color/whie"
+            android:textSize="20dp"
+            android:layout_weight="0.02" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+        <Button
+            android:id="@+id/reset"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:background="@drawable/player"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/reset"
+        android:layout_weight="0.02"
+        android:text="Reset"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+</RelativeLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="20dp"
+            android:textColor="@color/whie"
+            android:background="@color/r1"
+            android:layout_weight="0.02" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_below="@+id/tv"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:id="@+id/se"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:addStatesFromChildren="false"
+            android:fadingEdge="horizontal"
+            android:longClickable="false"
+            android:textAlignment="center" />
+    </RelativeLayout>
+</RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
